@@ -1,0 +1,385 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 400 16px 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.7;
+  background: #fafafb;
+}
+h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  color: #2d2d2d;
+}
+
+.container {
+  border-radius: 10px;
+  background: #ddd;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+/* Navigation Bar - Elegant & Matches Your Site */
+.navbar {
+  background: #fdf4d4;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #2d2d2d;
+  font-weight: 700;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 40px;
+}
+
+.nav-link {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #d4a373;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #d4a373;
+  bottom: -8px;
+  left: 0;
+  border-radius: 2px;
+}
+
+
+body {
+  padding-top: 80px;
+}
+.pal {
+  padding: 10px;
+  margin-top: 18px;
+  font-size: 2rem;
+  text-align: center;
+  background: #2d2d2d;
+  border: 2px solid #d4a373;
+  border-radius: 10px;
+  font-weight: 700;
+  font-style: oblique;
+  color: #ddd;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=90') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero-content {
+  display: flex;
+}
+
+.hero-content h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  max-width: 700px;
+}
+.hero-content img {
+  margin-left: 50px;
+  border-radius: 50%;
+  width: 150px;
+  margin-top: 20px;
+}
+/* Sections */
+section {
+  padding: 100px 0;
+}
+
+.story {
+  background: white;
+}
+.story-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  font-family: sans-serif;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #d4a373;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Ceremonies */
+.ceremony-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.ceremony-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.ceremony-card:hover {
+  transform: translateY(-10px);
+}
+
+.ceremony-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.ceremony-card h3 {
+  padding: 20px;
+  text-align: center;
+  /* background: white; */
+  font-size: 1.4rem;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #f8f1e9;
+}
+
+.testimonial-carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial {
+  display: none;
+  animation: fade 1s;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial h4 {
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #d4a373;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active, .dot:hover {
+  background-color: #d4a373;
+}
+
+/* Contact Form */
+.contact {
+  background: white;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: #d4a373;
+  color: white;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #c08b5c;
+}
+
+#formMessage {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+/* Footer Styling – Beautiful & Professional */
+footer {
+  background: #1a1a1a;           /* Deep dark (elegant) */
+  color: #e0e0e0;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+footer p:nth-child(2),
+footer p:nth-child(3) {
+  font-weight: 600;
+  color: #d4a373;                /* Same gold accent as the rest of the site */
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Program name a bit smaller and lighter */
+footer p:nth-child(4) {
+  font-style: italic;
+  color: #aaaaaa;
+  font-size: 0.95rem;
+}
+/* Social Media Icons – Original Brand Colors */
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 12px;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-4px);
+}
+
+/* Official colors */
+.fa brands */
+.fa-whatsapp      { color: #25D366; }
+.fa-facebook-f    { color: #1877F2; }
+.fa-instagram     { 
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.fa-x-twitter     { color: #000000; }
+
+/* For dark footer – make X icon white when needed */
+footer .fa-x-twitter { color: #ffffff; }
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 3rem; }
+  .story-grid, .form-grid { grid-template-columns: 1fr; }
+  .section-title { font-size: 2.3rem; }
+}
+
+/* Animation */
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
