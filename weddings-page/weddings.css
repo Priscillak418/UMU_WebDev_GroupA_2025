@@ -1,0 +1,487 @@
+/* Reset-ish and base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    line-height: 1.5;
+    color: #222;
+    background: #fff;
+}
+
+/* NAVBAR */
+.site-header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 50;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* left and right link groups */
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+/* centered logo */
+.logo {
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #111;
+}
+
+.logo span {
+    font-weight: 400;
+    color: #777;
+    margin-left: 6px;
+    font-size: 0.9rem;
+}
+
+/* mobile menu toggle shown on small screens */
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: 0;
+    font-size: 1rem;
+}
+
+/* mobile nav */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #eee;
+}
+
+/* HERO / CAROUSEL */
+.hero-section {
+    position: relative;
+    margin-top: 0;
+}
+
+.carousel {
+    position: relative;
+    height: 65vh;
+    min-height: 320px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* slide uses background-image */
+.slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: scale(1.02);
+    transition: opacity 600ms ease, transform 800ms ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* controls */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 0.6rem 0.9rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* chat button inside carousel */
+.chat-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #ff6b6b;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* INTRO */
+.intro {
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro .muted {
+    color: #777;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+.intro h1 {
+    font-size: 1.4rem;
+    margin: 0.2rem 0 1rem;
+    line-height: 1.2;
+}
+
+.intro p {
+    color: #444;
+    margin: 0 0 1.2rem;
+}
+
+.intro-ctas {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* buttons */
+.btn {
+    border: 0;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.btn.primary {
+    background: #111827;
+    color: #fff;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 1px solid #111827;
+    color: #111827;
+}
+
+.btn.light {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bi-camera{
+    font-size: 50px;
+}
+
+.bi-book-half{
+    font-size: 50px;
+}
+
+.bi-box2-heart{
+    font-size: 50px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 280px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.card-icon {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+}
+
+/* FEATURE BG with overlay text */
+.feature-bg {
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 1rem;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.feature-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+}
+
+/* INFO CENTER */
+.info-center {
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.info-center .muted {
+    color: #777;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.info-center h2 {
+    font-size: 1.25rem;
+    margin: 0.4rem 0 1rem;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    padding: 2rem 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    /* background-image: url(../images/testimonial-background.jpg); */
+    /* background-color: #a87297; */
+}
+
+.testi-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.testi-arrow {
+    background: transparent;
+    border: 0;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.testi-slide {
+    width: 620px;
+    max-width: 80%;
+    position: relative; 
+    overflow: hidden;   
+    min-height: 300px;
+}
+
+.testi-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 300ms ease;
+    position: absolute; 
+    top: 0;             
+    left: 0;            
+}
+
+.testi-item.active {
+    opacity: 1;
+    transform: none;
+}
+
+.couple-img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* BENEFITS */
+.benefits {
+    padding: 2.5rem 1rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.benefits ul {
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+/* HOW IT WORKS */
+.how-it-works {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.step {
+    width: 200px;
+    background: #fafafa;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.step i {
+    display: block;
+    margin-bottom: 0.6rem;
+    color: #333;
+}
+
+/* CONTACT */
+.contact {
+    padding: 2.5rem 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+}
+
+.form-msg {
+    margin-top: 0.6rem;
+    color: green;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #334772;
+    color: #fff;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-top {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    width: 33%;
+}
+
+.sponsors img {
+    height: 36px;
+    margin-right: 0.6rem;
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+    /* hide desktop links */
+    .mobile-menu-btn {
+        display: inline-block;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .testi-wrap {
+        flex-direction: column;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
