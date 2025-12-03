@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    
+    <link rel="stylesheet" href="home page.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navBar Section -->
+    <header class="main-header">
+        
+        <div class="top-bar">
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            
+            <div class="contact-info">
+                <span><i class="fa-solid fa-phone"></i> +256 778350448 </span>
+                <span><i class="fa-solid fa-envelope"></i> eternalmoments@yahoo.com </span>
+                <span><i class="fa-solid fa-location-dot"></i> Uganda-Nkozi </span>
+            </div>
+        </div>
+
+        <div class="nav-container">
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-list nav-left">
+                <li><a href="home page.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Weddings</a></li>
+                <li><a href="#">Portraits</a></li>
+            </ul>
+
+            <div class="logo-area">
+                <h1 class="logo-number">E.M</h1>
+                <h2 class="logo-text">PHOTO</h2>
+            </div>
+
+            <ul class="nav-list nav-right">
+                <li><a href="#">Art Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials/Reviews</a></li>
+                <li><a href="Contact us page.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="sub-header">
+            <p>LOVE-ETERNITY-MEMORIES</p>
+        </div>
+
+        <div class="hero-title">
+            <h1>WEDDING AND PORTRAIT PHOTOGRAPHERS</h1>
+        </div>
+
+    </header>
+    <!-- navBar ends -->
+    <!-- Cards section -->
+    <!-- ================= PORTFOLIO SLIDESHOW SECTION ================= -->
+    <section class="portfolio-split-section">
+        
+        <!-- LEFT CARD: WEDDINGS -->
+        <div class="portfolio-card" id="card-weddings">
+            
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <!-- Provision for 5 Images -->
+                <!-- Use class 'active' on the first image to make it visible initially -->
+                <img src="1.jpg" class="slide active" alt="Wedding Photo 1">
+                <img src="2.jpg" class="slide" alt="Wedding Photo 2">
+                <img src="3.jpg" class="slide" alt="Wedding Photo 3">
+                <img src="4.jpg" class="slide" alt="Wedding Photo 4">
+                <img src="5.jpg" class="slide" alt="Wedding Photo 5">
+            </div>
+
+            <!-- Navigation Arrows (Hidden by default, shown on hover) -->
+            <button class="nav-arrow prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="nav-arrow next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+
+            <!-- Link Button Overlay -->
+            <div class="card-overlay">
+                <a href="weddings.html" class="portfolio-btn btn-grey">WEDDINGS</a>
+            </div>
+        </div>
+
+        <!-- RIGHT CARD: PORTRAITS -->
+        <div class="portfolio-card" id="card-portraits">
+            
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <!-- Provision for 5 Images -->
+                <img src="17.jpg" class="slide active" alt="Portrait Photo 1">
+                <img src="18.jpg" class="slide" alt="Portrait Photo 2">
+                <img src="16.jpg" class="slide" alt="Portrait Photo 3">
+                <img src="15.jpg" class="slide" alt="Portrait Photo 4">
+                <img src="14.jpg" class="slide" alt="Portrait Photo 5">
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="nav-arrow prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="nav-arrow next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+
+            <!-- Link Button Overlay -->
+            <div class="card-overlay">
+                <a href="portraits.html" class="portfolio-btn btn-orange">PORTRAITS</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- cards end -->
+     <!-- button -->
+      <section class="cta-button-section">
+        <a href="contact.html" class="cta-chat-button">LETS CHAT</a>
+        <hr class="cta-separator">
+    </section>
+    <!-- button ends -->
+     <!-- about me card -->
+      <section class="about-section">
+    <div class="about-content-wrapper">
+
+    <!-- LEFT SIDE: Image and Abstract Shapes -->
+    <div class="about-left">
+        <div class="image-wrapper">
+        <!-- Provision for image: Replace 'images/bruce-photo.jpg' with your actual file path -->
+            <img src="a1.jpg" alt="..." class="profile-image">
+          
+            <!-- Abstract Background Blocks (The staggered colored boxes) -->
+                <div class="abstract-block block-dark"></div>
+                <div class="abstract-block block-light"></div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE: Text and Button -->
+        <div class="about-right">
+            <h6 class="subtitle-text">BEHIND THE LENS</h6>
+            <h2 class="title-text">Hello! I'm Josh</h2>
+            <p class="body-text">
+                I'm Josh Euler - a wedding and portrait photographer based in beautiful Uganda, Africa, 
+                and the world at large. Thank you for visiting my web site. Please look around and make 
+                yourself at home. When you're done, let's chat about your wedding and portrait plans.
+            </p>
+            <!-- Active button linking to a certain page -->
+            <a href="about.html" class="about-button">ABOUT</a>
+        </div>
+
+    </div>
+</section>
+<!-- about me card ends -->
+ <!-- card section 2 -->
+  <!-- ================= DIGITAL WORLD CTA SECTION ================= -->
+<!-- This section uses a background image, a dark overlay, and a prominent CTA button. -->
+<section class="digital-world-section">
+    <div class="content-overlay">
+        
+        <!-- Main Title -->
+        <h1 class="digital-title">LOST IN A DIGITAL WORLD?</h1>
+        
+        <!-- Descriptive Body Text -->
+        <p class="digital-body">
+            We offer the option to have your photos—taken with us—professionally printed and framed in a variety of 
+            styles, sizes, and finishes. It’s a simple way to turn your favorite moments into beautiful keepsakes for display 
+            or gifting.
+        </p>
+        
+        <!-- CTA Button (Active link) -->
+        <a href="printing-services.html" class="digital-cta-button">LEARN MORE </a>
+        
+        <!-- Separator Line (Visual element below the button) -->
+        <hr class="digital-separator">
+    </div>
+</section>
+<!-- card section 2 ends -->
+ <!-- cta section -->
+  <!-- ================= TAKE THE LEAP CTA SECTION ================= -->
+<section class="leap-cta-section">
+    <div class="leap-content-overlay">
+        
+        <!-- Main Title Line 1 -->
+        <h2 class="leap-title-line1">ARE YOU READY TO TAKE</h2>
+        
+        <!-- Main Title Line 2 (The script font) -->
+        <h1 class="leap-title-line2">The Leap?</h1>
+        
+        <!-- CTA Button -->
+        <a href="contact.html" class="leap-cta-button">GET IN TOUCH </a>
+    </div>
+</section>
+<!-- cta section ends -->
+ <!-- service promotion section -->
+  <!-- ================= SERVICE PROMOTIONAL SECTION ================= -->
+<section class="service-promo-section">
+    <div class="service-promo-wrapper">
+        
+        <!-- LEFT COLUMN: 406 HEADSHOT PROMOTION -->
+        <div class="promo-card promo-headshot">
+            <div class="logo-area">
+                <!-- Logo/Title: 406 HEADSHOT (Replace with actual image if needed) -->
+                <h2 class="promo-title-large"> E.M <br> HEADSHOT</h2>
+                <img src="B1.jpg" alt="Camera Sketch" class="camera-icon">
+            </div>
+            
+            <p class="promo-description">
+                For all your business photography needs
+            </p>
+            
+            <!-- CTA Button 1 -->
+            <a href="headshot-page.html" class="promo-button btn-dark-grey">CLICK HERE</a>
+        </div>
+
+        <!-- RIGHT COLUMN: PASSPORT & VISA PROMOTION -->
+        <div class="promo-card promo-passport">
+            
+            <div class="passport-header">
+                <h3 class="promo-title-small">Do you need a Passport <br> or Visa photo?</h3>
+                <!-- Passport Image Placeholder -->
+                <img src="B2.jpg" alt="US Passport" class="passport-icon">
+            </div>
+
+            <p class="promo-description-long">
+                You are in luck! E.M Headshot offers passport and visa photography for hundreds of countries, for adults, teens, children, and even newborn babies.
+            </p>
+
+            <p class="promo-description-long">
+                Visit our sister brand's Passport and Visa page to book now or see more information.
+            </p>
+            
+            <!-- CTA Button 2 -->
+            <a href="passport-visa-page.html" class="promo-button btn-dark-grey">Passport & Visa Photography</a>
+        </div>
+        
+    </div>
+</section>
+<!-- service promotion section ends -->
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        
+        <div class="footer-top-container">
+            
+            <div class="footer-col">
+                <h4>NAVIGATE</h4>
+                <ul class="footer-links">
+                    <li><a href="home page.html">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">client proofing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>FIND US</h4>
+                <div class="contact-details">
+                    <p>UMU E.M, Studio 219</p>
+                    <p>Uganda</p>
+                    <p>406.600.7617</p>
+                    <a href="mailto:bruce@406photo.com">eternalmoments@yahoo.com</a>
+                </div>
+            </div>
+
+            <div class="footer-col cta-col">
+                <h4>Let's Talk</h4>
+                <a href="Contact us page.html" class="cta-link">Click Here</a>
+            </div>
+
+            <div class="footer-col cta-col">
+                <h4>Book Now</h4>
+                <a href="Contact us page.html" class="cta-link">Click Here</a>
+            </div>
+        </div>
+
+
+        <div class="footer-middle-text">
+            <p>
+                E.M Photo: Timeless Wedding Photography 
+                <span class="separator">|</span> 
+                Member Wedding & Portrait Photographers International
+            </p>
+            <p class="locations">
+                Uganda <span class="bullet">•</span> 
+                E.Africa <span class="bullet">•</span> 
+                Africa <span class="bullet">•</span> 
+                National <span class="bullet">•</span> 
+                International
+            </p>
+        </div>
+
+
+        <div class="footer-bottom-logos">
+            <div class="logo-wrapper">
+                 <img src="l1.jpg" alt="WPPI Member Logo">
+            </div>
+            
+            <div class="logo-wrapper middle-logo">
+                 <img src="l2.jpg" alt="Proud Member of PPA Professional Photographers of America">
+            </div>
+            
+            <div class="logo-wrapper">
+                 <img src="l3.jpg" alt="As Seen On The Knot">
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer ends -->
+    <script src="home page.js"></script>
+</body>
+</html>
