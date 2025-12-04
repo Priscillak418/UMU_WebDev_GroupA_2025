@@ -11,39 +11,39 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="../weddings-page/weddings.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
   <!-- NAVBAR -->
   <header class="site-header">
-    <nav class="navbar">
-      <div class="nav-left">
-        <a href="#" class="nav-link">Portfolio</a>
-        <a href="../About_Us_Page/index.html" class="nav-link">About us</a>
-      </div>
-
-      <div class="nav-center">
-        <!-- logo centered -->
-        <a href="../index.html" class="logo">Eternal moments<span>photography</span></a>
-      </div>
-
-      <div class="nav-right">
-        <a href="../nature-portaits/naturepotraits.html" class="nav-link">Nature</a>
-        <a href="../portraits-page/Potraits.html" class="nav-link">Portraits</a>
-
-        <!-- mobile menu toggle (hidden on desktop) -->
-        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open menu">
-          <i class="fa fa-bars"></i>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Eternal photography</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./weddings.html">Weddings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../About_Us_Page/index.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../testimonials-page/index.html">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../nature-portaits/naturepotraits.html">Nature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../portraits-page/Potraits.html">Portraits</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-
-    <!-- simple mobile nav (hidden by default) -->
-    <div id="mobileNav" class="mobile-nav">
-      <a href="#">Portfolio</a>
-      <a href="../About_Us_Page/index.html">About us</a>
-      <a href="#">Weddings</a>
-      <a href="#">Contact</a>
-    </div>
   </header>
 
   <!-- HERO CAROUSEL SECTION -->
@@ -235,6 +235,7 @@
   </footer>
 
   <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="../weddings-page/weddings.js"></script>
 </body>
 </html>

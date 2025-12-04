@@ -20,65 +20,50 @@ body {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0.8rem 1rem;
-    max-width: 1100px;
-    margin: 0 auto;
+.navbar-nav{
+    padding-left: 100px !important;
 }
 
-/* left and right link groups */
-.nav-left,
-.nav-right {
-    display: flex;
-    gap: 0.6rem;
-    align-items: center;
+.navbar-brand{
+    font-family:cursive;
+    font-weight: 900;
 }
 
-.nav-link {
-    text-decoration: none;
-    color: #444;
-    font-weight: 600;
-    padding: 0.25rem 0.5rem;
+.nav-item a{
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
-.nav-link:hover {
-    color: #000;
+a:before{
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
 }
 
-/* centered logo */
-.logo {
-    font-weight: 800;
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: #111;
+a:hover {
+ background-position: 0;
 }
 
-.logo span {
-    font-weight: 400;
-    color: #777;
-    margin-left: 6px;
-    font-size: 0.9rem;
-}
-
-/* mobile menu toggle shown on small screens */
-.mobile-menu-btn {
-    display: none;
-    background: transparent;
-    border: 0;
-    font-size: 1rem;
-}
-
-/* mobile nav */
-.mobile-nav {
-    display: none;
-    flex-direction: column;
-    background: #fff;
-    padding: 0.5rem 1rem;
-    border-top: 1px solid #eee;
+a:hover::before{
+  width: 100%;
 }
 
 /* HERO / CAROUSEL */
@@ -296,8 +281,6 @@ body {
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
-    /* background-image: url(../images/testimonial-background.jpg); */
-    /* background-color: #a87297; */
 }
 
 .testi-wrap {
@@ -416,23 +399,23 @@ textarea {
 
 .form-msg {
     margin-top: 0.6rem;
-    color: green;
+    color: #6b963e;
 }
 
 .send-message{
-    background-color:#4d9e67 !important;
+    background-color:#6b963e !important;
 }
 
 .get-in-touch{
-    background-color:#4d9e67 !important;
+    background-color:#6b963e !important;
 }
 .book-a-chat{
-    background-color:#4d9e67 !important;
+    background-color:#6b963e !important;
 }
 
 /* FOOTER */
 .site-footer {
-    background: #4d9e67;
+    background: #6b963e;
     color: #fff;
     padding: 1rem 1rem;
     margin-top: 2rem;
