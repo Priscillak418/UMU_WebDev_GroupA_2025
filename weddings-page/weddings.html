@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eternal moments photography</title>
+
+  <!-- Font Awesome for icons (simple CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="../weddings-page/weddings.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="#" class="nav-link">Portfolio</a>
+        <a href="../About_Us_Page/index.html" class="nav-link">About us</a>
+      </div>
+
+      <div class="nav-center">
+        <!-- logo centered -->
+        <a href="index.html" class="logo">Eternal moments<span>photography</span></a>
+      </div>
+
+      <div class="nav-right">
+        <a href="../nature-portaits/naturepotraits.html" class="nav-link">Nature</a>
+        <a href="../portraits-page/Potraits.html" class="nav-link">Portraits</a>
+
+        <!-- mobile menu toggle (hidden on desktop) -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open menu">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- simple mobile nav (hidden by default) -->
+    <div id="mobileNav" class="mobile-nav">
+      <a href="#">Portfolio</a>
+      <a href="../About_Us_Page/index.html">About us</a>
+      <a href="#">Weddings</a>
+      <a href="#">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO CAROUSEL SECTION -->
+  <section class="hero-section">
+    <div class="carousel" id="carousel">
+      <!-- slides: use real wedding images in images/ folder -->
+      <div class="slide active" style="background-image: url('../images/christophe-dusabe-1QtaaB8knv8-unsplash.jpg')"></div>
+      <div class="slide" style="background-image: url('../images/carousel.webp')"></div>
+      <div class="slide" style="background-image: url('../images/carousel-image-2.jpg')"></div>
+
+      <!-- controls -->
+      <button class="carousel-control prev" id="prevBtn" aria-label="Previous slide">&lt;</button>
+      <button class="carousel-control next" id="nextBtn" aria-label="Next slide">&gt;</button>
+
+      <!-- chat button inside carousel -->
+      <a href="#contact" class="chat-btn" id="chatBtn"><i class="fa fa-comments"></i> Chat</a>
+    </div>
+  </section>
+
+  <!-- INTRO / CENTERED COPY -->
+  <section class="intro">
+    <small class="muted">TIMELESS WEDDING PHOTOGRAPHY</small>
+    <h1>YOU WANT A PHOTOGRAPHER WHO BRINGS OUT THE BEST IN YOU AND YOUR GUESTS</h1>
+    <p>Without being bossy or overbearing. We will put you and your guests at ease so you can enjoy your wedding as we capture all the magic of your special day. No awkward poses, no fake smiles, and in the end, your wedding story is told in your very own heirloom wedding album and beautiful wall art.</p>
+    <div class="intro-ctas">
+      <button class="btn primary book-a-chat" onclick="scrollToContact()">Book a Chat</button>
+      <button class="btn outline" onclick="openPortfolio()">View Portfolio</button>
+    </div>
+  </section>
+
+  <!-- THREE SMALL RECTANGULAR CARDS -->
+  <section class="cards">
+    <div class="card">
+      <i class="bi bi-camera"></i>
+      <h3>Natural Portraits</h3>
+      <p>Candid moments that show real emotion.</p>
+    </div>
+    <div class="card">
+      <i class="bi bi-book-half"></i>
+      <h3>Heirloom Albums</h3>
+      <p>Beautiful albums you’ll keep for life.</p>
+    </div>
+    <div class="card">
+      <i class="bi bi-box2-heart"></i>
+      <h3>Fine Art Prints</h3>
+      <p>Gallery-quality wall art for your home.</p>
+    </div>
+  </section>
+
+  <!-- BACKGROUND IMAGE WITH WHITE TEXT -->
+  <section class="feature-bg" style="background-image: url('../images/wedding-decor.avif')">
+    <div class="feature-content">
+      <h2>Captured Moments, For Generations</h2>
+      <p>We craft a visual story — timeless, romantic, and your own.</p>
+      <button class="btn light" onclick="scrollToContact()">Let's Talk</button>
+    </div>
+  </section>
+
+  <!-- INFO BLOCK - centered -->
+  <section class="info-center">
+    <small class="muted">WITH ETERNAL PHOTOGRAPHY</small>
+    <h2>WE PHOTOGRAPH A SELECT 10 WEDDINGS PER YEAR</h2>
+    <p>Our style is timeless and romantic with a splash of fun! Your wedding album will be filled with authentic, stunning images of your best day ever! We will be with you every step of the way, from planning your wedding photography to designing and ordering your wall art and albums.</p>
+  </section>
+
+  <!-- TESTIMONIALS SLIDER -->
+  <section class="testimonials">
+    <h3>Testimonials</h3>
+
+    <div class="testi-wrap">
+      <button class="testi-arrow" id="testiPrev">&#10094;</button>
+
+      <div class="testi-slide" id="testiSlide">
+        <!-- testimonial item -->
+        <div class="testi-item active">
+          <img src="../images/testimonial-image-2.avif" alt="couple" class="couple-img">
+          <div class="testi-content">
+            <h4>Best decision ever</h4>
+            <p>"They made us feel so comfortable. The photos are everything we dreamed of."</p>
+            <small>- Anna &amp; Michael</small>
+          </div>
+        </div>
+
+        <div class="testi-item">
+          <img src="../images/testimonial-image.jpg" alt="couple" class="couple-img">
+          <div class="testi-content">
+            <h4>Natural & beautiful</h4>
+            <p>"No awkward poses — just us being ourselves. The album is stunning."</p>
+            <small>- Lillian &amp; Joseph</small>
+          </div>
+        </div>
+
+        <div class="testi-item">
+          <img src="../images/wedding-carousel.webp" alt="couple" class="couple-img">
+          <div class="testi-content">
+            <h4>So much joy captured</h4>
+            <p>"Every smile, every tear — perfectly captured. Highly recommend."</p>
+            <small>- Naomi &amp; Peter</small>
+          </div>
+        </div>
+      </div>
+
+      <button class="testi-arrow" id="testiNext">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- "With 406 Photo You Will" section -->
+  <section class="benefits">
+    <h3>WITH ETERNAL PHOTOGRAPHY YOU WILL:</h3>
+    <ul>
+      <li>Be taken care of every step of the journey. We’ll communicate frequently before your wedding and review all the details together.</li>
+      <li>Treasure your heirloom album and stunning wall art.</li>
+      <li>Enjoy a stress-free, fun experience for you and your wedding party.</li>
+      <li>Be guided through the process of displaying your photography, not abandoned to a digital world of good intentions and regret.</li>
+    </ul>
+    <button class="btn primary get-in-touch" onclick="scrollToContact()">Get in touch</button>
+  </section>
+
+  <!-- HOW IT WORKS - three steps with icons -->
+  <section class="how-it-works">
+    <h3>How it works</h3>
+    <div class="steps">
+      <div class="step">
+        <i class="fa fa-comments fa-2x"></i>
+        <h4>Quick chat</h4>
+        <p>A short phone or video conversation to plan the day.</p>
+      </div>
+
+      <div class="step">
+        <i class="fa fa-smile fa-2x"></i>
+        <h4>Enjoy the experience</h4>
+        <p>Relax and have fun — we capture the real moments.</p>
+      </div>
+
+      <div class="step">
+        <i class="fa fa-photo-film fa-2x"></i>
+        <h4>Project your highlights</h4>
+        <p>Display your favourite moments on walls and albums.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (anchor for chat and buttons) -->
+  <section id="contact" class="contact">
+    <h3>Get in touch</h3>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="email" id="email" placeholder="Email address" required>
+      </div>
+      <textarea id="message" placeholder="Tell us about your wedding" rows="5" required></textarea>
+      <button class="btn primary send-message" type="submit">Send message</button>
+      <p id="formMsg" class="form-msg" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-left">
+        <h4>Location</h4>
+        <p>Kampala, Uganda</p>
+      </div>
+
+      <div class="footer-center">
+        <!-- <h4>Sponsors</h4>
+        <div class="sponsors">
+          <img src="images/sponsor1.png" alt="sponsor" />
+          <img src="images/sponsor2.png" alt="sponsor" />
+          <img src="images/sponsor3.png" alt="sponsor" />
+        </div> -->
+      </div>
+
+      <!-- <div class="footer-right">
+        <h4>Quick Links</h4>
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div> -->
+    </div>
+
+    <div class="footer-bottom">
+      <!-- Add your name and student details here (the exam requires footer membership details) -->
+      <p>KAYEGI PRISCILLA</p>
+      <p>2025-B291-13452</p>
+      <p>BACHELOR OF SCIENCE IN COMPUTER SCIENCE NKOZI</p>
+      <p>&copy; 2025 Eternal moments Photography</p>
+    </div>
+  </footer>
+
+  <!-- script -->
+  <script src="../weddings-page/weddings.js"></script>
+</body>
+</html>

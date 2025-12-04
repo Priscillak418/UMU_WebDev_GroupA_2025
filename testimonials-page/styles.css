@@ -1,0 +1,395 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: goldenrod;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 1px 20px;
+    margin-bottom: 60px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color:rgba(0, 0, 0, 0.7)
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: black;
+}
+.carousel-item img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Testimonials Section */
+.testimonials-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonials-intro h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.testimonials-intro p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.carousel-slide{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    width: 100%; 
+    position: relative;
+}
+
+/* Filter Controls */
+.filter-controls {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: #fff;
+    border: 2px solid #ddd;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    border-color: #8B7355;
+    color: #8B7355;
+}
+.carousel-caption {
+    background-color: #333333cc;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.carousel-caption h1, .carousel-caption h2 {
+    text-align: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.filter-btn.active {
+    background: #8B7355;
+    border-color: #8B7355;
+    color: white;
+}
+
+/* Flip Card Container */
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+    perspective: 1000px;
+}
+
+/* Flip Card Styles */
+.flip-card {
+    background: transparent;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.flip-card-front {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.flip-card-back {
+    background: lightgray;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+/* Front Card Styles */
+.client-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #8B7355;
+    margin-bottom: 20px;
+}
+
+.default-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8B7355, #6b5a45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: goldenrod;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border: 4px solid #8B7355;
+}
+
+.client-name-front {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.service-wedding {
+    background: #FFE4E1;
+    color: #8B0000;
+}
+
+.service-portrait {
+    background: #E6E6FA;
+    color: #4B0082;
+}
+
+.service-event {
+    background: #F0FFF0;
+    color: #006400;
+}
+
+.hover-hint {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: #888;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.flip-card:hover .hover-hint {
+    opacity: 1;
+}
+
+/* Back Card Styles */
+.rating {
+    color: #ffc107;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: black;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.client-info-back {
+    border-top: 1px solid #8B7355;
+    padding-top: 20px;
+}
+
+.client-name-back {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.service-type-back {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-date {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+/* Add Testimonial Section */
+.add-testimonial {
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.add-testimonial h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.testimonial-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: darkgoldenrod;
+}
+
+.submit-btn {
+    background: darkgoldenrod;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: black;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-btn {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .add-testimonial {
+        padding: 30px 20px;
+    }
+    
+    .flip-card {
+        height: 350px;
+    }
+}
+
+/* Animation for new cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.new-testimonial {
+    animation: fadeInUp 0.6s ease-out;
+}
