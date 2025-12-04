@@ -419,9 +419,20 @@ textarea {
     color: green;
 }
 
+.send-message{
+    background-color:#4d9e67 !important;
+}
+
+.get-in-touch{
+    background-color:#4d9e67 !important;
+}
+.book-a-chat{
+    background-color:#4d9e67 !important;
+}
+
 /* FOOTER */
 .site-footer {
-    background: #334772;
+    background: #4d9e67;
     color: #fff;
     padding: 1rem 1rem;
     margin-top: 2rem;
