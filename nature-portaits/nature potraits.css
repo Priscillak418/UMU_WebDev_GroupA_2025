@@ -49,7 +49,7 @@ body {
 }
 
 .top-bar-right .location {
-    font-weight: bold; /
+    font-weight: bold; 
 }
 
 /*
@@ -164,8 +164,6 @@ body {
     line-height: 1.5;
 }
 
-/* navbar */
-
 /* ================= PORTFOLIO SECTION (Wedding Only) ================= */
 
 .portfolio-split-section {
@@ -269,27 +267,6 @@ body {
 }
 .btn-grey:hover { background-color: rgba(80, 80, 80, 1); }
 
-/* REMOVED: .btn-orange styles for Portraits */
-
-/* --- Responsive Mobile Layout --- */
-@media (max-width: 768px) {
-    .portfolio-split-section {
-        flex-direction: column;
-        height: auto; /* Let content dictate height */
-    }
-
-    .portfolio-card {
-        width: 100%;
-        height: 400px; /* Fixed height for mobile cards */
-    }
-    
-    /* On mobile, maybe show arrows always since there is no 'hover' */
-    .nav-arrow {
-        opacity: 1; 
-        background: rgba(0, 0, 0, 0.2);
-    }
-}
-
 /* ================= FUN & RELAXED SECTION STYLES ================= */
 
 .fun-relaxed-section {
@@ -354,30 +331,11 @@ body {
     background-color: #c7742d; /* Slightly darker orange on hover */
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .relaxed-title {
-        font-size: 2rem;
-    }
-    .relaxed-text {
-        font-size: 1rem;
-    }
-    .relaxed-subtitle {
-        font-size: 0.75rem;
-        letter-spacing: 1.5px;
-    }
-}
-
-/* section 3 */
 /* ================= FEATURES STRIP STYLES ================= */
-
-/* Ensure you have the script font loaded in your HTML head: 
-   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
-*/
 
 .features-strip-section {
     padding: 20px 0;
-    background-color: #ffffff; /* Or transparent if you want it on the page bg */
+    background-color: #ffffff; 
 }
 
 .features-wrapper {
@@ -418,27 +376,10 @@ body {
     line-height: 1.2;
 }
 
-/* --- Responsive Adjustments --- */
-@media (max-width: 768px) {
-    .features-wrapper {
-        flex-direction: column; /* Stack boxes vertically on mobile */
-    }
-
-    .feature-box {
-        width: 100%; /* Full width on mobile */
-        margin-bottom: 10px;
-    }
-    
-    .feature-text {
-        font-size: 1.5rem; /* Slightly smaller text on mobile */
-    }
-}
-
-/* testimonial sec */
 /* ================= TESTIMONIALS SLIDER STYLES ================= */
 
 .testimonials-section {
-    background-color: #f9f9f9; /* Light grey background */
+    background-color: burlywood; /* Light background */
     padding: 100px 20px;
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -537,17 +478,6 @@ body {
     background-color: #d77f32; /* Active dot color */
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .testimonials-title {
-        font-size: 2rem;
-    }
-    .quote-text {
-        font-size: 1.2rem;
-    }
-}
-
-/* booking section */
 /* ================= BOOKING CALL TO ACTION SECTION STYLES ================= */
 
 .booking-cta-section {
@@ -623,28 +553,6 @@ body {
     transform: scale(1.02);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .booking-cta-section {
-        min-height: 350px;
-        background-attachment: scroll; /* Disable parallax on mobile for performance */
-    }
-    
-    .booking-title {
-        font-size: 2.5rem;
-    }
-    
-    .booking-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .booking-btn {
-        padding: 15px 30px;
-        font-size: 1.1rem;
-    }
-}
-
-/* section 4 */
 /* ================= PHOTOGRAPHY GALLERY GRID STYLES ================= */
 
 .gallery-section {
@@ -751,41 +659,13 @@ body {
 }
 
 
-/* --- Responsive Adjustments --- */
-@media (max-width: 992px) {
-    .gallery-grid {
-        /* Tablet: 2 columns */
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .gallery-grid {
-        /* Mobile: 1 column */
-        grid-template-columns: 1fr;
-    }
-    
-    .gallery-item {
-        height: 250px; /* Reduce height for mobile view */
-    }
-
-    .gallery-title {
-        font-size: 2rem;
-    }
-}
-
 /* ================= FOOTER STYLES ================= */
 
 .main-footer {
-    /* Matching background style to header */
-    background-color: #f9f9f9;
-    /* Uncomment below if you added the texture to the header body */
-    /* background-image: url('images/paper-texture.jpg'); */
-    
     padding: 60px 20px;
     color: #1a1a1a;
     font-family: 'Playfair Display', serif;
-    border-top: 1px solid #eaeaea; /* Subtle separation line */
+    border-top: 1px solid #eaeaea;
 }
 
 /* --- Top Section (Columns) --- */
@@ -910,9 +790,169 @@ body {
     opacity: 1;
 }
 
+/* ================= RESPONSIVENESS (Combined Media Queries) ================= */
 
-/* --- Footer Responsive Adjustments --- */
+
+/*
+    Responsive Overhaul for Navbar/Header (main-content)
+    Targets max-width: 900px to simplify the complex split layout
+*/
+@media (max-width: 900px) {
+    /* 1. Reset the main container's complex positioning */
+    .main-content {
+        height: auto; /* Allow height to adjust to content */
+        padding-bottom: 20px;
+        flex-direction: column; /* Ensure all elements are centered and stacked */
+    }
+
+    /* 2. Smaller Logo for mobile */
+    .logo-area {
+        margin: 15px 0;
+    }
+    .logo-number {
+        font-size: 60px; /* Smaller number */
+    }
+    .logo-text {
+        font-size: 28px; /* Smaller 'PHOTO' text */
+    }
+    .logo-tagline {
+        margin-top: 5px;
+    }
+
+    /* 3. Stack Navigation Links */
+    .main-nav-top,
+    .main-nav-bottom {
+        /* Remove absolute positioning and size constraints */
+        position: static;
+        width: 100%;
+        transform: none;
+        padding: 0;
+        justify-content: center; /* Center the links */
+        flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
+        margin-bottom: 5px; /* Add small vertical spacing between nav sections */
+    }
+
+    /* Remove the large padding overrides that created the split effect */
+    .main-nav-top {
+        justify-content: center;
+        padding-right: 0; 
+    }
+
+    .main-nav-bottom {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .nav-link {
+        margin: 5px 10px; /* Reduce spacing between links */
+        font-size: 13px;
+    }
+
+    /* Adjust Top Bar for Mobile */
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .top-bar-left, 
+    .top-bar-right {
+        margin-bottom: 5px;
+        display: flex; /* Keeps items inline */
+        justify-content: center;
+    }
+    .top-bar-left a,
+    .top-bar-right span {
+        font-size: 12px;
+    }
+
+    /* Orange Text adjustment */
+    .orange-text {
+        font-size: 24px;
+        margin-top: 20px;
+        letter-spacing: 3px;
+    }
+}
+
+
+/* General Mobile & Tablet Adjustments (<= 768px) */
 @media (max-width: 768px) {
+    /* Portfolio/Slideshow */
+    .portfolio-split-section {
+        flex-direction: column;
+        height: auto; /* Let content dictate height */
+    }
+
+    .portfolio-card {
+        width: 100%;
+        height: 400px; /* Fixed height for mobile cards */
+    }
+    
+    /* On mobile, maybe show arrows always since there is no 'hover' */
+    .nav-arrow {
+        opacity: 1; 
+        background: rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Fun & Relaxed Section */
+    .relaxed-title {
+        font-size: 2rem;
+    }
+    .relaxed-text {
+        font-size: 1rem;
+    }
+    .relaxed-subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
+    }
+    
+    /* Features Strip */
+    .features-wrapper {
+        flex-direction: column; /* Stack boxes vertically on mobile */
+    }
+
+    .feature-box {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 10px;
+    }
+    
+    .feature-text {
+        font-size: 1.5rem; /* Slightly smaller text on mobile */
+    }
+    
+    /* Testimonials */
+    .testimonials-title {
+        font-size: 2rem;
+    }
+    .quote-text {
+        font-size: 1.2rem;
+    }
+    
+    /* Booking CTA */
+    .booking-cta-section {
+        min-height: 350px;
+        background-attachment: scroll; /* Disable parallax on mobile for performance */
+    }
+    
+    .booking-title {
+        font-size: 2.5rem;
+    }
+    
+    .booking-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .booking-btn {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+    
+    /* Gallery Grid (Tablet) */
+    .gallery-grid {
+        /* Tablet: 2 columns */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
     .footer-top-container {
         flex-direction: column;
         text-align: center;
@@ -928,5 +968,41 @@ body {
     
     .logo-wrapper {
         max-width: 120px; /* Smaller images on mobile */
+    }
+}
+
+/* Gallery Grid Mobile Adjustment (<= 600px) */
+@media (max-width: 600px) {
+    .gallery-grid {
+        /* Mobile: 1 column */
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-item {
+        height: 250px; /* Reduce height for mobile view */
+    }
+
+    .gallery-title {
+        font-size: 2rem;
+    }
+}
+
+/* Footer Refinement for Tablet/Medium Screens (769px to 1100px) */
+@media (min-width: 769px) and (max-width: 1100px) {
+    .footer-top-container {
+        /* Distribute the columns evenly but with more constraint */
+        justify-content: space-around;
+        gap: 20px;
+        padding: 0 40px;
+    }
+    
+    .footer-col {
+        /* Adjust column basis to prevent columns from getting too wide/narrow */
+        flex: 1 1 30%; 
+    }
+    
+    /* Ensure the CTA columns are still recognizable, even if they take up more space */
+    .cta-col {
+        flex: 1 1 100px;
     }
 }
