@@ -7,7 +7,7 @@ const testimonials = [
         rating: 5,
         text: "Absolutely incredible work! Our wedding photos are more beautiful than we could have ever imagined. They perfectly captured every special moment and emotion of our big day.",
         date: "2023-10-15",
-        image: "freenaturestock-2326.jpg",
+        image: "lady1.jpg",
     },
     {
         id: 2,
@@ -16,52 +16,52 @@ const testimonials = [
         rating: 5,
         text: "The portrait session was so much fun! The photographer made us feel completely at ease and the results were stunning. We'll cherish these photos forever.",
         date: "2024-09-22",
-        image: ""
+        image: "male2.jpg"
     },
     {
         id: 3,
-        name: "Emma Rodriguez",
+        name: "Jackie Rodriguez",
         service: "portrait",
         rating: 4,
         text: "Professional, punctual, and talented! Our corporate event was documented beautifully. The team was unobtrusive yet captured all the key moments perfectly.",
         date: "2025-10-05",
-        image: "freenaturestock-2293.jpg"
+        image: "lady3.jpg"
     },
     {
         id: 3,
-        name: "Pricilla Kayegi",
+        name: "Priscilla Kayegi",
         service: "event",
         rating: 4,
         text: "Professional, punctual, and talented! Our corporate event was documented beautifully. The team was unobtrusive yet captured all the key moments perfectly.",
         date: "2025-10-05",
-        image: "WhatsApp Image 2025-12-03 at 10.02.48 PM.jpeg"
+        image: "priscilla.jpeg"
     },
     {
         id: 3,
-        name: "Anthony kagere",
+        name: "Anthony Kagere",
         service: "wedding",   
         rating: 5,
         text: "Professional, punctual, and talented! Our corporate event was documented beautifully. The team was unobtrusive yet captured all the key moments perfectly.",
         date: "2025-10-05",
-        image: "WhatsApp Image 2025-12-03 at 9.53.31 PM.jpeg"
+        image: "anthony.jpeg"
     },
     {
         id: 3,
-        name: "Emma julia",
+        name: "Emma Julia",
         service: "event",
         rating: 4,
         text: "Professional, punctual, and talented! Our corporate event was documented beautifully. The team was unobtrusive yet captured all the key moments perfectly.",
         date: "2025-10-05",
-        image: ""
+        image: "lady2.jpg"
     },
     {
         id: 3,
-        name: "Emma Rodriguez",
+        name: "Jackie Rodriguez",
         service: "event",
         rating: 4,
         text: "Professional, punctual, and talented! Our corporate event was documented beautifully. The team was unobtrusive yet captured all the key moments perfectly.",
         date: "2025-10-05",
-        image: ""
+        image: "lady3.jpg"
     },
     {
         id: 4,
