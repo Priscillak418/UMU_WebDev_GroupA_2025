@@ -10,36 +10,37 @@
 </head>
 <body>
   <nav class="navbar">
-  <div class="nav-container">
-    <div class="nav-logo">
-      Eternal Moments
+    <div class="nav-container">
+      <div class="nav-logo">
+        Eternal Moments
+      </div>
+      <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact Us</a>
+        </li>
+      </ul>
     </div>
-    <ul class="nav-menu">
-      <li class="nav-item">
-        <a href="#" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link active">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Contact Us</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+  </nav>
 
-  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
       <img src="./Images/icon.png" alt="icon">
       <h1>About Eternal Moments</h1>
-      
+      <p class="caption">Capturing life's most beautiful ceremonies with passion and artistry</p>
     </div>
   </section>
-      <div class="pal">
-        <p>Capturing life's most beautiful ceremonies with passion and artistry</p>
-      </div>
-  <!-- Our Story -->
+      
   <section class="story">
     <div class="container">
       <div class="story-grid">
@@ -62,7 +63,6 @@
     </div>
   </section>
 
-  <!-- Ceremonies We Capture -->
   <section class="ceremonies">
     <div class="container">
       <h2 class="section-title">Ceremonies We Capture</h2>
@@ -88,59 +88,56 @@
           <h3>Baptism Ocassions</h3>
         </div>
         <div class="ceremony-card">
-          <img src="./Images/babyshower1 (1).jpg" alt="Anniversary">
+          <img src="./Images/babyshower1 (1).jpg" alt="Baby Shower">
           <h3>Baby Showers & Gender Reveal Parties</h3>
         </div>
         <div class="ceremony-card">
-          <img src="./Images/babyshower1 (2).jpg" alt="Anniversary">
+          <img src="./Images/babyshower1 (2).jpg" alt="Birthday Party">
           <h3>Birthday Milestones</h3>
         </div>
         <div class="ceremony-card">
-          <img src="./Images/babyshower1 (11).jpg" alt="Anniversary">
+          <img src="./Images/babyshower1 (11).jpg" alt="Graduation">
           <h3>Graduations</h3>
         </div>
       </div>
     </div>
-  </div>
   </section>
 
-  <!-- Testimonials -->
   <section class="testimonials">
     <div class="container">
       <h2 class="section-title">What Our Clients Say</h2>
       <div class="testimonial-carousel">
         <div class="testimonial active">
-          <p>"Eternal Moments made our wedding day unforgettable. Every photo tells a story. We cry happy tears every time we look at them!</p>
-          <h4- Aisha & Mohammed</h4>
+          <p>"Eternal Moments made our wedding day unforgettable. Every photo tells a story. We cry happy tears every time we look at them!"</p>
+          <h4>- Aisha & Mohammed</h4>
         </div>
         <div class="testimonial">
-          <p>They captured our traditional ceremony so beautifully — every ritual, every emotion. Highly recommend!</p>
-          <h4— Priya & Arjun</h4>
+          <p>"They captured our traditional ceremony so beautifully — every ritual, every emotion. Highly recommend!"</p>
+          <h4>- Priya & Arjun</h4>
         </div>
         <div class="testimonial">
-          <p>Professional, kind, and incredibly talented. Worth every penny.</p>
-          <h4— Sarah & James</h4>
+          <p>"Professional, kind, and incredibly talented. Worth every penny."</p>
+          <h4>- Sarah & James</h4>
         </div>
       </div>
       <div class="dots">
-        <span class="dot active" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
       </div>
     </div>
   </section>
 
-  <!-- Contact Form -->
   <section class="contact">
     <div class="container">
       <h2 class="section-title">Let's Create Memories Together</h2>
-      <form id="contactForm">
+      <form id="contactForm" class="form-grid-container"> 
         <div class="form-grid">
-          <input type="text" id="name" placeholder="Your Name" required>
-          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
         </div>
-        <input type="text" id="event" placeholder="Event Type (e.g. Wedding, Anniversary)" required>
-        <textarea id="message" rows="6" placeholder="Tell us about your special day..." required></textarea>
+        <input type="text" id="event" name="event" placeholder="Event Type (e.g. Wedding, Anniversary)" required>
+        <textarea id="message" name="message" rows="6" placeholder="Tell us about your special day..." required></textarea>
         <button type="submit">Send Message</button>
       </form>
       <div id="formMessage"></div>
@@ -148,26 +145,26 @@
   </section>
   <footer>
     <div class="social-icons">
-  <a href="https://wa.me/256XXXXXXXXX" target="_blank" aria-label="WhatsApp" class="social-link">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook" class="social-link">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-  <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram" class="social-link">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="https://x.com/yourprofile" target="_blank" aria-label="X (Twitter)" class="social-link">
-    <i class="fab fa-x-twitter"></i>
-  </a>
-</div>
-        <p>
-        &copy; 2025 Eternal Moments Photography. All rights reserved.
-        </p>
-        <p> NAME: KAGERE ANTHONY</p>
-        <P>REG NO: 2025-B291-10681</P>
-        <P>BACHELOR OF SCIENCE IN COMPUTER SCIENCE</P>
- </footer>
+      <a href="https://wa.me/256XXXXXXXXX" target="_blank" aria-label="WhatsApp" class="social-link">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook" class="social-link">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://x.com/yourprofile" target="_blank" aria-label="X (Twitter)" class="social-link">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+    </div>
+    <p>
+      &copy; 2025 Eternal Moments Photography. All rights reserved.
+    </p>
+    <p>NAME: KAGERE ANTHONY</p>
+    <P>REG NO: 2025-B291-10681</P>
+    <P>BACHELOR OF SCIENCE IN COMPUTER SCIENCE</P>
+  </footer>
 
   <script src="script.js"></script>
 </body>
