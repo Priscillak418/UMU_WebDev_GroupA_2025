@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ETERNAL MOMENTS PHOTOGRAPHY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-transparent color-primary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">ETERNAL MOMENTS</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../weddings-page/weddings.html">Weddings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../nature-portaits/naturepotraits.html">Nature</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../portraits-page/Potraits.html">Portraits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../About_Us_Page/index.html">About us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="freenaturestock-2326.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>ETERNAL MOMENTS PHOTOGRAPHY</h1>
+        <h2>Share with us your experience</h2>
+        <p>CLIENT TESTIMONIALS AND REVIEWS</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="freenaturestock-2232.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>ETERNAL MOMENTS PHOTOGRAPHY</h1>
+        <h2>Share with us your experience</h2>
+        <p>CLIENT TESTIMONIALS AND REVIEWS</p>
+    </div>
+    <div class="carousel-item">
+      <img src="freenaturestock-2335.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>ETERNAL MOMENTS PHOTOGRAPHY</h1>
+        <h2> Share with us your experience</h2>
+        <p>CLIENT TESTIMONIALS AND REVIEWS</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </header>
+    <main class="container">
+        <section class="testimonials-intro">
+            <h2>What People Are Saying</h2>
+            <h4>ETERNAL MOMENTS PHOTOGRAPHY</h4>
+            <p>We take pride in capturing your special moments. Here's what some of our wonderful clients have shared about their experience.</p>
+        </section>
+
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All Reviews</button>
+            <button class="filter-btn" data-filter="wedding">Wedding</button>
+            <button class="filter-btn" data-filter="portrait">Portrait</button>
+            <button class="filter-btn" data-filter="event">Event</button>
+        </div>
+
+        <div class="testimonials-container" id="testimonialsContainer">
+            <!-- Testimonials will be loaded here by JavaScript -->
+        </div>
+
+        <section class="add-testimonial">
+            <h2>Share Your Experience</h2>
+            <form id="testimonialForm" class="testimonial-form">
+                <div class="form-group">
+                    <input type="text" id="clientName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="clientImage" placeholder="Image URL (optional)">
+                </div>
+                <div class="form-group">
+                    <select id="serviceType" required>
+                        <option value="">Select Service Type</option>
+                        <option value="wedding">Wedding Photography</option>
+                        <option value="portrait">Portrait Session</option>
+                        <option value="event">Event Photography</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="rating" required>
+                        <option value="">Select Rating</option>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="testimonialText" placeholder="Your testimonial..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Testimonial</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        
+            <h1>LAWORT MARVIN 2025-D301-12597</h1>
+            <p>&copy; 2025 ETERNAL MOMENTS PHOTOGRAPHY. All rights reserved.</p>
+        </div>
+    </footer>
+    <i class="bi bi-telegram"></i>
+    <i class="bi bi-threads-fill"></i>
+    <i class="bi bi-tiktok"></i>
+    <script src="./script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+</body>
+</html>
