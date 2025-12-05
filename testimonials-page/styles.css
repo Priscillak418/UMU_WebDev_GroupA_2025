@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: goldenrod;
+    background-color: #3333;
     color: #333;
     line-height: 1.6;
 }
@@ -20,13 +20,15 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background: #3333;
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
     padding: 1px 20px;
     margin-bottom: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 header h1 {

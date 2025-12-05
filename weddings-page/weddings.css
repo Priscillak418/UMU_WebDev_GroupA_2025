@@ -8,7 +8,11 @@ body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     line-height: 1.5;
     color: #222;
+<<<<<<< HEAD
     background: #3333 !important;
+=======
+    background: #fdf4d4;
+>>>>>>> 6e6acd0b2677ba66ce275630f74061cfdd911557
 }
 
 /* NAVBAR */
