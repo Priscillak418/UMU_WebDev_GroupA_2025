@@ -22,8 +22,9 @@ h2, h3, h4 {
 }
 
 .container {
-  border-radius: 10px;
   background: #3333;
+  border-radius: 10px;
+  /* Removed background: #ddd for cleaner look, you can re-add if needed */
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 20px;
