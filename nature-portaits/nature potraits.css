@@ -32,7 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 17px;
     color: #444;
 }
 
@@ -134,7 +134,7 @@ body {
 .nav-link {
     text-decoration: none;
     color: #444;
-    font-size: 14px;
+    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0 15px;

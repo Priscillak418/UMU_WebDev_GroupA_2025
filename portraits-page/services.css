@@ -21,7 +21,7 @@
         justify-content: center;
         align-items: center;
         color: gold;
-        font-size: 42px;
+        font-size: 45px;
         letter-spacing: 3px;
         font-weight: 500;
         text-shadow: 0 0 18px rgba(255, 215, 0, 0.6);
@@ -53,7 +53,7 @@
     justify-content: center;
     align-items: center;
     color: gold;
-    font-size: 38px;
+    font-size: 40px;
     letter-spacing: 3px;
     font-weight: 500;
     text-shadow: 0 0 18px rgba(255, 215, 0, 0.6);
@@ -103,13 +103,13 @@ header span {
     h2 {
         color: gold;
         margin-bottom: 18px;
-        font-size: 30px;
+        font-size: 32px;
         text-shadow: 0 0 10px rgba(255, 215, 0, 0.45);
     }
 
     p {
         margin-bottom: 20px;
-        font-size: 17px;
+        font-size: 20px;
         opacity: 0.88;
         line-height: 1.8;
     }
@@ -166,7 +166,7 @@ header span {
         background: transparent;
         border-radius: 30px;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 22px;
         letter-spacing: 1px;
         transition: 0.3s ease;
     }
